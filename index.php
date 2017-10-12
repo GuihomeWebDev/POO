@@ -38,7 +38,7 @@ var_dump($guihome);
                 <p><?= "Leodagan frappe Merlin avec son éppée "; ?></p>
                 <p><?php $leodagan->handOfGod($merlin); ?></p>
                 <p><?= "vie de merlin"." ".$merlin->life; ?></p>
-                <h3>Fin du combat (dans quel état son nos personnages)</h3>
+                <h3>Fin du combat (dans quel état sont nos personnages)</h3>
                 <p><?= $guihome->death(); ?></p>
                 <p><?= $merlin->death(); ?></p>
                 <p><?= $leodagan->death(); ?></p>

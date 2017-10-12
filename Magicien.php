@@ -11,12 +11,12 @@ class Magicien extends Personnage{
   public $shout ="";
   public $name;
   public $target;
-// fonction qui affiche le cri du magicien
+// methode qui affiche le cri du magicien
   public function yell($shout){
     $shout= "VOUS NE PASSERAIS PAS...";
     echo $shout;
   }
-  //fonction qui permet d'envoyer des boules de feu
+  //methode qui permet d'envoyer des boules de feu
   public function spell($target){
     if ($this->magic >= $this->fireBall) {
       $this->magic -= $this->fireBall;

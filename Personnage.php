@@ -18,13 +18,13 @@ public function __construct($name){
   $this->name = $name;
 }
 /*
-*function qui permet au personnage de crier
+*methode qui permet au personnage de crier
 */
 public function yell($shout){
   echo $shout;
 }
 /*
-*fonction qui permet au personnage de reupérer de la vie
+*methode qui permet au personnage de reupérer de la vie
 */
 public function regenerated($life = null){
   if (is_null($life)) {
@@ -35,7 +35,7 @@ public function regenerated($life = null){
   }
 }
 /*
-*fonction qui permet de savoir si un personnage est mort ou vivant
+*methode qui permet de savoir si un personnage est mort ou vivant
 */
 public function death(){
   if ($this->life <= 0) {
@@ -46,7 +46,7 @@ public function death(){
 
 }
 /*
-*fonction qui permet de frapper avec ses poings(degats de merde pour un perso de base)
+*methode qui permet de frapper avec ses poings(degats de merde pour un perso de base)
 */
 public function punch($target){
 $target->life -= $this->attack;
